@@ -1,6 +1,6 @@
 {
   "name": "@caphub-funding/caphub-types",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "shared typescript types",
   "main": "dist/index.js",
   "publishConfig": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/CapHub-Funding/types#readme",
   "devDependencies": {
+    "mongoose": "^7.0.4",
     "typescript": "^5.0.4"
   }
 }
