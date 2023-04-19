@@ -1,0 +1,25 @@
+{
+  "name": "@caphub/caphub-types",
+  "version": "1.0.0",
+  "description": "shared typescript types",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapHub-Funding/types.git"
+  },
+  "author": "Michael Nusair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapHub-Funding/types/issues"
+  },
+  "homepage": "https://github.com/CapHub-Funding/types#readme",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
