@@ -1,10 +1,11 @@
 {
   "name": "@caphub/caphub-types",
+  "private": true,
   "version": "1.0.0",
   "description": "shared typescript types",
   "main": "dist/index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "build": "tsc"
