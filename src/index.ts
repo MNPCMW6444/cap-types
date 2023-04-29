@@ -65,12 +65,22 @@ export interface Runway {
   unit: TimeUnit;
 }
 
+export interface GracePeriod {
+  amount: PositiveNumber;
+  unit: TimeUnit;
+}
+
+export interface TermLength {
+  amount: PositiveNumber;
+  unit: TimeUnit;
+}
+
 export interface WebsiteFormData {
   annualRevenue: ARR;
   annualGrowthRate: AGR;
   currentRunway: Runway;
-  termLength: number;
-  gracePeriod: number;
+  termLength: TermLength;
+  gracePeriod: GracePeriod;
   email: string;
 }
 
