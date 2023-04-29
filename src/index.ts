@@ -17,11 +17,51 @@ export enum Currency {
   AED = "AED",
 }
 
-export interface WebsiteFormData {
-  annualRevenue: number;
+export type PositiveNumber = number & { readonly __brand: unique symbol };
+export function toPositiveNumber(value: number): PositiveNumber | null {
+  return value > 0 ? (value as PositiveNumber) : null;
+}
+
+export interface ARR {
+  amount: PositiveNumber;
   currency: Currency;
-  annualGrowthRate: number;
-  currentRunway: number;
+}
+
+export interface AGR {
+  amount: PositiveNumber;
+  unuit: "%";
+}
+
+export interface Runway {
+  amount: PositiveNumber;
+  unit:
+    | "Months"
+    | "Years"
+    | "Decades"
+    | "Centuries"
+    | "Millennia"
+    | "Microfortnights"
+    | "Nanocenturies"
+    | "Picoyears"
+    | "Femtoseconds"
+    | "Attoseconds"
+    | "Zeptoseconds"
+    | "Yoctoseconds"
+    | "Seconds"
+    | "Weeks"
+    | "Days"
+    | "Hours"
+    | "Minutes"
+    | "Milliseconds"
+    | "Microseconds"
+    | "Nanoseconds"
+    | "Picoseconds";
+}
+
+export interface WebsiteFormData {
+  annualRevenue: ARR;
+  annualGrowthRate: AGR;
+  currentRunway: Runway;
   termLength: number;
   gracePeriod: number;
   email: string;
