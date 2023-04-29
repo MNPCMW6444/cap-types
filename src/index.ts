@@ -7,12 +7,12 @@ export interface CapHubUser extends Document {
 }
 
 export interface WebsiteFormData {
-  annualRevenue: string;
-  currency: string;
-  annualGrowthRate: string;
-  currentRunway: string;
+  annualRevenue: number;
+  currency: "EUR" | "GBP" | "CHF" | "RUB" | "TRY" | "ZAR" | "ILS" | "AED";
+  annualGrowthRate: number;
+  currentRunway: number;
   termLength: number;
-  gracePeriod: string;
+  gracePeriod: number;
   email: string;
 }
 
