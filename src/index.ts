@@ -22,6 +22,34 @@ export function toPositiveNumber(value: number): PositiveNumber | null {
   return value > 0 ? (value as PositiveNumber) : null;
 }
 
+export enum Unit {
+  Percent = "%",
+}
+
+export enum TimeUnit {
+  Months = "Months",
+  Years = "Years",
+  Decades = "Decades",
+  Centuries = "Centuries",
+  Millennia = "Millennia",
+  Microfortnights = "Microfortnights",
+  Nanocenturies = "Nanocenturies",
+  Picoyears = "Picoyears",
+  Femtoseconds = "Femtoseconds",
+  Attoseconds = "Attoseconds",
+  Zeptoseconds = "Zeptoseconds",
+  Yoctoseconds = "Yoctoseconds",
+  Seconds = "Seconds",
+  Weeks = "Weeks",
+  Days = "Days",
+  Hours = "Hours",
+  Minutes = "Minutes",
+  Milliseconds = "Milliseconds",
+  Microseconds = "Microseconds",
+  Nanoseconds = "Nanoseconds",
+  Picoseconds = "Picoseconds",
+}
+
 export interface ARR {
   amount: PositiveNumber;
   currency: Currency;
@@ -29,33 +57,12 @@ export interface ARR {
 
 export interface AGR {
   amount: PositiveNumber;
-  unuit: "%";
+  unuit: Unit;
 }
 
 export interface Runway {
   amount: PositiveNumber;
-  unit:
-    | "Months"
-    | "Years"
-    | "Decades"
-    | "Centuries"
-    | "Millennia"
-    | "Microfortnights"
-    | "Nanocenturies"
-    | "Picoyears"
-    | "Femtoseconds"
-    | "Attoseconds"
-    | "Zeptoseconds"
-    | "Yoctoseconds"
-    | "Seconds"
-    | "Weeks"
-    | "Days"
-    | "Hours"
-    | "Minutes"
-    | "Milliseconds"
-    | "Microseconds"
-    | "Nanoseconds"
-    | "Picoseconds";
+  unit: TimeUnit;
 }
 
 export interface WebsiteFormData {
