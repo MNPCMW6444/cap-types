@@ -1,10 +1,12 @@
 import { Document } from "mongoose";
+
 export interface CapHubUser extends Document {
   email: string;
   name: string;
   passwordHash: string;
 }
-enum Currency {
+
+export enum Currency {
   EUR = "EUR",
   GBP = "GBP",
   CHF = "CHF",
@@ -24,6 +26,7 @@ export interface WebsiteFormData {
   gracePeriod: number;
   email: string;
 }
+
 export interface SavedWebsiteFormData extends Document {
   stringifiedFormData: string;
 }
