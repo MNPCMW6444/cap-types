@@ -17,5 +17,5 @@ export interface WebsiteFormData {
 }
 
 export interface SavedWebsiteFormData extends Document {
-  formData: FormData;
+  stringifiedFormData: string;
 }
