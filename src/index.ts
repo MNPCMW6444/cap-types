@@ -57,7 +57,7 @@ export interface ARR {
 
 export interface AGR {
   amount: PositiveNumber;
-  unuit: Unit;
+  unit: Unit;
 }
 
 export interface Runway {
