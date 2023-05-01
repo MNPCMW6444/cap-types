@@ -6,7 +6,7 @@ export interface CapHubUser extends Document {
   passwordHash: string;
 }
 
-export const enum Currency {
+export enum Currency {
   EUR = "EUR",
   GBP = "GBP",
   CHF = "CHF",
