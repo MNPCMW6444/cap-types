@@ -1,7 +1,7 @@
 {
-  "name": "@caphub-funding/mainserver-provider",
-  "version": "3.3.57",
-  "description": "mainserver provider for react apps",
+  "name": "@caphub-funding/types",
+  "version": "3.3.58",
+  "description": "types",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CapHub-Funding/mainserver-provider.git"
+    "url": "git+https://github.com/CapHub-Funding/types.git"
   },
   "author": "Michael Nusair",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CapHub-Funding/mainserver-provider/issues"
+    "url": "https://github.com/CapHub-Funding/types/issues"
   },
-  "homepage": "https://github.com/CapHub-Funding/mainserver-provider#readme",
+  "homepage": "https://github.com/CapHub-Funding/types#readme",
   "dependencies": {
     "mongoose": "^7.1.0",
     "typescript": "^5.0.4"
