@@ -1,5 +1,5 @@
 {
-  "name": "@caphub-funding/types",
+  "name": "@caphub-funding/caphub-types",
   "version": "3.9.59",
   "description": "types",
   "type": "module",
