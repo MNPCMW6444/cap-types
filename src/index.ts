@@ -6,6 +6,14 @@ export interface CapHubUser extends Document {
   passwordHash: string;
 }
 
+export type PositiveNumber = number & { readonly __brand: unique symbol };
+export const toPositiveNumber = (value: number): PositiveNumber | null =>
+  value > 0 ? (value as PositiveNumber) : null;
+
+export enum Unit {
+  Percent = "%",
+}
+
 export enum Currency {
   EUR = "EUR",
   GBP = "GBP",
@@ -15,14 +23,7 @@ export enum Currency {
   ZAR = "ZAR",
   ILS = "ILS",
   AED = "AED",
-}
-
-export type PositiveNumber = number & { readonly __brand: unique symbol };
-export const toPositiveNumber = (value: number): PositiveNumber | null =>
-  value > 0 ? (value as PositiveNumber) : null;
-
-export enum Unit {
-  Percent = "%",
+  USD = "USD",
 }
 
 export enum TimeUnit {
