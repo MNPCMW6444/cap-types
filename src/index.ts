@@ -6,7 +6,7 @@ export interface CapHubUser extends Document {
   passwordHash: string;
 }
 
-export enum Currency {
+export enum Currencyx {
   EUR = "EUR",
   GBP = "GBP",
   CHF = "CHF",
@@ -51,7 +51,7 @@ export enum TimeUnit {
 
 export interface ARR {
   amount: PositiveNumber;
-  currency: Currency;
+  currency: Currencyx;
 }
 
 export interface AGR {
