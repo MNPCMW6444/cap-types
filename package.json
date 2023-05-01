@@ -1,6 +1,6 @@
 {
   "name": "@caphub-funding/caphub-types",
-  "version": "1.0.20",
+  "version": "1.0.23",
   "description": "shared typescript types",
   "type": "module",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
   "scripts": {
     "update": "npx npm-check-updates -u",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "build": "npm run clean && tsc && cp package.json ./dist",
     "prebuild": "npm run version:patch",
     "version:patch": "npm version patch --no-git-tag-version",
     "version:minor": "npm version minor --no-git-tag-version",
