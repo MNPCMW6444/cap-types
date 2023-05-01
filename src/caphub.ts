@@ -1,4 +1,6 @@
 import { Document } from "mongoose";
+import { PositiveNumber } from "./positiveNumber";
+import { Currency } from "./currency";
 
 export interface CapHubUser extends Document {
   email: string;
