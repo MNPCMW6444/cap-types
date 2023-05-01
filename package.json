@@ -1,6 +1,6 @@
 {
   "name": "@caphub-funding/caphub-types",
-  "version": "1.0.25",
+  "version": "1.0.24",
   "description": "shared typescript types",
   "type": "module",
   "main": "dist/index.js",
