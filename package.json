@@ -1,5 +1,5 @@
 {
-  "name": "@caphub-funding/caphub-types",
+  "name": "@caphub-group/caphub-types",
   "version": "3.9.60",
   "description": "types",
   "type": "module",
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CapHub-Funding/types.git"
+    "url": "git+https://github.com/CapHub-group/types.git"
   },
   "author": "Michael Nusair",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CapHub-Funding/types/issues"
+    "url": "https://github.com/CapHub-group/types/issues"
   },
-  "homepage": "https://github.com/CapHub-Funding/types#readme",
+  "homepage": "https://github.com/CapHub-group/types#readme",
   "dependencies": {
     "mongoose": "^7.1.0",
     "typescript": "^5.0.4"
