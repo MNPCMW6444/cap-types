@@ -9,7 +9,7 @@ import {
   Vertical,
 } from "./types";
 
-export interface ARR {
+export interface Money {
   amount: PositiveNumber;
   currency: Currency;
 }
@@ -27,7 +27,8 @@ export interface Period {
 }
 
 export interface WebsiteFormData {
-  annualRevenue: ARR;
+  annualRevenue: Money;
+  quote: Money;
   annualGrowthRate: NumAndUnit;
   currentRunway: Runway;
   termLength: Period;
