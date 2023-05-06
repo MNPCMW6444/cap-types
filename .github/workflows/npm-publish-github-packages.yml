@@ -22,7 +22,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: npm run update
       - run: npm i
-      - run: npm run build
+      - run: npm run xbuild
 
       # Commit and push the changes to the main branch
       - name: Commit changes

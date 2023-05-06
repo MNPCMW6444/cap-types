@@ -17,6 +17,7 @@
     "update": "npx npm-check-updates -u",
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc && cp package.json ./dist"
+    "xbuild": "npm run clean && tsc && cp package.json ./dist"
   },
   "repository": {
     "type": "git",
