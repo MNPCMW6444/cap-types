@@ -1,6 +1,6 @@
 {
   "name": "@caphub-group/caphub-types",
-  "version": "3.9.62",
+  "version": "3.9.86",
   "description": "types",
   "type": "module",
   "main": "dist/index.js",
@@ -16,8 +16,7 @@
     "version:major": "npm version major --no-git-tag-version",
     "update": "npx npm-check-updates -u",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json ./dist",
-    "xbuild": "npm run clean && tsc && cp package.json ./dist"
+    "build": "npm run clean && tsc && cp package.json ./dist"
   },
   "repository": {
     "type": "git",
