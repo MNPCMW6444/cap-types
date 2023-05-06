@@ -28,7 +28,7 @@ jobs:
       - name: Commit changes
         run: |
           git config --global user.email mnpcmw6444@gmail.com
-          git config --global user.name Action
+          git config --global user.name MNPCMW6444
           git add -A
           git commit -m "Build artifacts"
           git push
