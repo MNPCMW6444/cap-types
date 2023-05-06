@@ -29,9 +29,8 @@ jobs:
         run: |
           git config --global user.email "mnpcmw6444@gmail.com"
           git config --global user.name "Michael Nusair"
-          git add -A
-          git commit -m "Version Increment"
-          git push
+          npm version patch -m "chore(release): %s [skip ci]"
+          git push origin main --follow-tags
 
       - run: npm publish
         env:
