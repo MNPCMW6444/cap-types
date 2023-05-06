@@ -1,6 +1,6 @@
 {
   "name": "@caphub-group/caphub-types",
-  "version": "3.9.88",
+  "version": "3.9.93",
   "description": "types",
   "type": "module",
   "main": "dist/index.js",
