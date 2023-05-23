@@ -287,4 +287,6 @@ export interface CaphubUser extends Document {
   email: string;
   name: string;
   passwordHash: string;
+  twoFactorSecret: string;
+  isTwoFactorEnabled: boolean;
 }
