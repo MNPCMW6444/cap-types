@@ -1,6 +1,6 @@
 {
   "name": "@caphub-group/caphub-types",
-  "version": "3.9.93",
+  "version": "3.9.95",
   "description": "types",
   "type": "module",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/CapHub-group/types#readme",
   "dependencies": {
-    "mongoose": "^7.1.0",
+    "mongoose": "^7.2.0",
     "typescript": "^5.0.4"
   }
 }
